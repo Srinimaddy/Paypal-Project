@@ -37,6 +37,6 @@ public ModelAndView addUser(HttpServletRequest request, HttpServletResponse resp
 
   userService.register(user);
 
-  return new ModelAndView("welcome", "firstname", user.getUserName());
+  return new ModelAndView("welcome",  user.getUserName());
 }
 }
